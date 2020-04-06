@@ -2257,6 +2257,10 @@
       return this;
     },
 
+    toggleImageTransition: function toggleImageTransition() {
+      toggleClass(this.image, CLASS_TRANSITION, this.options.transition);
+    },
+
     /**
      * Play the images
      * @param {boolean} [fullscreen=false] - Indicate if request fullscreen or not.
